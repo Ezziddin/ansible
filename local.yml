@@ -8,5 +8,6 @@
         - node
         - zsh
   tasks:
-    - include_tasks: tasks/zsh.yml
+    - include_tasks: tasks/git-setup.yml
+    - include_tasks: tasks/zsh-setup.yml
     - include_tasks: tasks/node-setup.yml
