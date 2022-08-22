@@ -5,3 +5,6 @@ pip install --upgrade pip
 
 ## Install ansible
 python3 -m pip install --user ansible
+
+# TODO: check python verion
+echo  'export PATH="$HOME/Library/Python/3.8/bin:$PATH"' 1>> $HOME/.zshrc
