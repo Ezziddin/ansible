@@ -1,9 +1,24 @@
 - name: Install ZSH
   apt: name=zsh
   tags: zsh
+
+- name: check whether on-my-zsh exists
+  stat:
+    path: "{{ lookup('env', 'HOME') }}/.oh-my-zsh"
+  register: oh_my_stats
+  tags: zsh
+
 - name: install oh my zsh
   shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
   tags: zsh
+  when: oh_my_stats.stat.exists == False
+
 - name: Change shell to zsh
   shell: chsh -s $(which zsh)
+  tags: zsh
+
+- name: Install zsh-autosuggestions
+  git:
+    repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
+    dest: '~/.oh-my-zsh/plugins/zsh-autosuggestions'
   tags: zsh

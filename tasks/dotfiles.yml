@@ -1,0 +1,8 @@
+- name: Installing stow
+  apt: name=stow
+  tags:
+    - install
+    - dotfiles
+    - stow
+- name: Stow dotfiles
+  shell: 'cd ./dotfiles && stow  */'
