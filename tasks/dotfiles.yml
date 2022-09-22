@@ -5,4 +5,4 @@
     - dotfiles
     - stow
 - name: Stow dotfiles
-  shell: 'cd ./dotfiles && stow  */'
+  shell: 'cd ./dotfiles && stow  */ --target={{ home | dirname }}'

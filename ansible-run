@@ -1,2 +1,2 @@
 #!/usr/bin/env zsh
-ansible-playbook local.yml --vault-id ssh@prompt
+ansible-playbook -K local.yml --vault-id ssh@prompt
