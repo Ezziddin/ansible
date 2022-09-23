@@ -1,5 +1,5 @@
 - name: Install ZSH
-  apt: name=zsh
+  homebrew: name=zsh
   tags: zsh
 
 - name: check whether on-my-zsh exists

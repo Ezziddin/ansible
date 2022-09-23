@@ -4,9 +4,9 @@
     dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
     home: "{{ lookup('env', 'HOME') }}"
   pre_tasks:
-    - name: Update Cache
-      apt:
-        update_cache: true
+    - name: brew Cache
+      homebrew:
+        update_homebrew: true
       tags:
         - node
         - zsh
