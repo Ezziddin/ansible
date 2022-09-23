@@ -23,3 +23,9 @@
     repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
     dest: '~/.oh-my-zsh/plugins/zsh-autosuggestions'
   tags: zsh
+
+- name: Install powerlevel10k theme
+  ansible.builtin.git:
+    repo: 'https://github.com/romkatv/powerlevel10k.git'
+    dest: '{{ home }}/powerlevel10k'
+    depth: 1
