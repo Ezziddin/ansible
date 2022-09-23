@@ -1,5 +1,5 @@
 - name: Install ZSH
-  homebrew: name=zsh
+  community.general.homebrew: name=zsh
   tags: zsh
 
 - name: check whether on-my-zsh exists

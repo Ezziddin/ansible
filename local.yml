@@ -5,7 +5,7 @@
     home: "{{ lookup('env', 'HOME') }}/"
   pre_tasks:
     - name: brew Cache
-      homebrew:
+      community.general.homebrew:
         update_homebrew: true
       tags:
         - node
