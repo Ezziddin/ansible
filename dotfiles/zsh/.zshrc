@@ -18,7 +18,7 @@ export ZSH="/Users/ezziddin/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # ANDRIOD_HOME enviroment variables
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -106,7 +106,7 @@ plugins=(
     jira
 )
 source $ZSH/oh-my-zsh.sh
-
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -143,5 +143,6 @@ alias sail="./vendor/bin/sail"
 alias .zshrc="code ~/.zshrc"
 alias .projects="cd ~/Documents/Projects"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To customize prompt, run `p10k configure` or edit /var/folders/md/1fqv41vn11b__3m325bws6rm0000gn/T/vscode-zsh/.p10k.zsh.
+[[ ! -f /var/folders/md/1fqv41vn11b__3m325bws6rm0000gn/T/vscode-zsh/.p10k.zsh ]] || source /var/folders/md/1fqv41vn11b__3m325bws6rm0000gn/T/vscode-zsh/.p10k.zsh
