@@ -2,7 +2,7 @@
   vars:
     source_key: './.ssh/id_rsa'
     dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
-    home: "{{ lookup('env', 'HOME') }}"
+    home: "{{ lookup('env', 'HOME') }}/"
   pre_tasks:
     - name: Update Cache
       apt:
