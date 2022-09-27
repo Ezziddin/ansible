@@ -142,6 +142,8 @@ alias greset="git reset --soft HEAD~"
 alias sail="./vendor/bin/sail"
 alias .zshrc="code ~/.zshrc"
 alias .projects="cd ~/Documents/Projects"
+alias .books="cd ~/Documents/Books"
+alias .ansible="code ~/Documents/Projects/ansible"
 
 
 # To customize prompt, run `p10k configure` or edit /var/folders/md/1fqv41vn11b__3m325bws6rm0000gn/T/vscode-zsh/.p10k.zsh.
